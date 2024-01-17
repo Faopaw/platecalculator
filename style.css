@@ -1,0 +1,60 @@
+body {
+  height: 100vh;
+  width: fit;
+  margin: none;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #243b55, #141e30);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #243b55, #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: aliceblue;
+}
+
+.inputsection {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputcontainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    row-gap: 1rem;
+}
+
+.outputsection {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.outputcontainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#weightsul {
+    list-style: none;
+    text-align: center;
+    padding: inherit;
+}
+
+#submitform {
+    font-size: medium;
+    padding: 0.3rem;
+}
