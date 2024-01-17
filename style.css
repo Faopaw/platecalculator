@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
 body {
+  font-family: "Poppins", sans-serif;
   height: 100vh;
   width: fit;
   margin: none;
@@ -11,50 +14,61 @@ body {
 }
 
 .inputsection {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .inputcontainer {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #form {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    row-gap: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  row-gap: 1rem;
 }
 
 .outputsection {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .outputcontainer {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgb(13, 12, 43);
+  margin-top: 1.2rem;
+  padding: 0.6rem;
+  border-radius: 9%;
+  min-width: 200px;
+  min-height: 150px;
+  border: 1px solid rgba(22, 0, 63, 0.527);
 }
 
 #weightsul {
-    list-style: none;
-    text-align: center;
-    padding: inherit;
+  list-style: none;
+  text-align: center;
+  padding: inherit;
 }
 
 #submitform {
-    font-size: medium;
-    padding: 0.3rem;
+  font-size: medium;
+  padding: 0.3rem;
+}
+
+.radiobuttons * {
+  margin: 0.3rem;
 }
