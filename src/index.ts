@@ -69,16 +69,23 @@ const calculate = function (
   return resultArray.plates;
 };
 
-const renderOutput = function(weightdObject:{singleplate:any,qty:any}[]):void {
+const renderOutput = function (
+  weightdObject: { singleplate: any; qty: any }[],
+  unit: string
+): void {
   const ul = document.getElementById("weightsul") as HTMLUListElement;
-  ul.innerHTML = ''
+  ul.innerHTML = "";
   weightdObject.map((item) => {
     const li = document.createElement("li");
     // const text = document.createTextNode(`${item.singleplate}kgs - x${item.qty}`);
-    li.textContent = `${item.singleplate}kgs - x${item.qty}`;
+    if (unit === "kgs") {
+      li.textContent = `${item.singleplate}kgs - x${item.qty}`;
+    } else {
+      li.textContent = `${item.singleplate}lbs - x${item.qty}`;
+    }
     ul.appendChild(li);
-  })
-}
+  });
+};
 
 const returnWeight = function () {
   let results;
@@ -88,23 +95,26 @@ const returnWeight = function () {
       unit: "kgs",
       barbellweight: +barbellweight,
     });
+    console.log(results);
+    renderOutput(results, "kgs");
+    return results;
   } else {
     results = calculate(+totalweight, {
       unit: "lbs",
       barbellweight: +barbellweight,
     });
+    console.log(results);
+    renderOutput(results, "lbs");
+    return results;
   }
-  console.log(results);
-  renderOutput(results)
-  return results;
 };
 
 window.addEventListener("DOMContentLoaded", (event) => {
-const targetelement = document.getElementById("form") as HTMLFormElement;
-targetelement.addEventListener("submit",  (event) =>  {
-  event.preventDefault();
-  returnWeight();
-});
+  const targetelement = document.getElementById("form") as HTMLFormElement;
+  targetelement.addEventListener("submit", (event) => {
+    event.preventDefault();
+    returnWeight();
+  });
 });
 
 // const submitbutton = document.getElementById("submitform") as HTMLButtonElement;
