@@ -1,0 +1,27 @@
+Plate Diameter/thickness:
+
+Rogue Calibrated KG Steel Plates
+
+
+25kg   = 450mm/27mm
+20kg   = 450mm/22.5mm
+15kg   = 400mm/21mm
+10kg   = 325mm/21mm
+5kg    = 228mm/21.5mm
+2.5kg  = 190mm/16mm
+1.25kg = 160mm/12mm
+0.5kg  = 134mm/8mm
+0.25kg = 112mm/6mm
+
+Rogue Calibrated LB Steel Plates
+
+55lb   = 450mm/27mm
+45lb   = 450mm/22mm
+35lb   = 400mm/21mm
+25lb   = 325mm/23mm
+10lb   = 228mm/19mm
+5lb    = 190mm/14.5mm
+2.5lb  = 160mm/10mm
+1lb    = 134mm/7mm
+0.5lb  = 112mm/5.5mm
+0.25lb = 90mm/4.5mm
