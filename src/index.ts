@@ -29,7 +29,7 @@ const calculate = function (
     // returnClosest: boolean;
   }
 ): any[] {
-  const kgplates = [50, 25, 20, 15, 10, 5, 2.5, 1.25, 0.5, 0.25];
+  const kgplates = [25, 20, 15, 10, 5, 2.5, 1.25, 0.5, 0.25];
   const lbplates = [55, 45, 35, 25, 10, 5, 2.5, 1, 0.5, 0.25];
   let selectedplates: number[];
   const resultArray: { plates: any[] } = {
