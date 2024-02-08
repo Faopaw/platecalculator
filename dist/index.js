@@ -47,22 +47,42 @@ const calculate = function (targetweight, { unit, barbellweight, }) {
             }
         }
     });
-    // console.log(resultArray.plates);
     return resultArray.plates;
 };
 const renderOutput = function (weightdObject, unit) {
     const ul = document.getElementById("weightsul");
     ul.innerHTML = "";
     weightdObject.map((item) => {
-        const li = document.createElement("li");
-        // const text = document.createTextNode(`${item.singleplate}kgs - x${item.qty}`);
         if (unit === "kgs") {
-            li.textContent = `${item.singleplate}kgs - x${item.qty}`;
+            for (let index = 0; index < item.qty; index++) {
+                const li = document.createElement("li");
+                if (item.singleplate === 2.5) {
+                    li.classList.add(`class2point5kg`);
+                }
+                else if (item.singleplate === 1.25) {
+                    li.classList.add(`class1point25kg`);
+                }
+                else if (item.singleplate === 0.5) {
+                    li.classList.add(`class0point5kg`);
+                }
+                else if (item.singleplate === 0.25) {
+                    li.classList.add(`class0point25kg`);
+                }
+                else {
+                    li.classList.add(`class${item.singleplate}kg`);
+                }
+                li.textContent = `${item.singleplate}kgs`;
+                ul.appendChild(li);
+            }
         }
         else {
-            li.textContent = `${item.singleplate}lbs - x${item.qty}`;
+            for (let index = 0; index <= item.qty; index++) {
+                const li = document.createElement("li");
+                li.classList.add(`class${item.singleplate}lb`);
+                li.textContent = `${item.singleplate}lbs`;
+                ul.appendChild(li);
+            }
         }
-        ul.appendChild(li);
     });
 };
 const returnWeight = function () {
@@ -75,7 +95,6 @@ const returnWeight = function () {
         });
         console.log(results);
         renderOutput(results, "kgs");
-        return results;
     }
     else {
         results = calculate(+totalweight, {
@@ -84,7 +103,6 @@ const returnWeight = function () {
         });
         console.log(results);
         renderOutput(results, "lbs");
-        return results;
     }
 };
 window.addEventListener("DOMContentLoaded", (event) => {

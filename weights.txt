@@ -25,3 +25,10 @@ Rogue Calibrated LB Steel Plates
 1lb    = 134mm/7mm (3.358208955223881:3.857142857142857)
 0.5lb  = 112mm/5.5mm (4.017857142857143:4.909090909090909)
 0.25lb = 90mm/4.5mm (5:6)
+
+
+
+Standard Barbell Measurements
+
+Bar diameter - 28mm/1.1 inches (on Average)
+Sleeve diameter - 50.8mm/2 inches (Standard Olympic Bar)

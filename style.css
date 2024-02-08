@@ -62,6 +62,96 @@ body {
   list-style: none;
   text-align: center;
   padding: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Each Class like this is supposed to represent a weight plate form the front view */
+:root {
+  --base-plate-diameter: 250px;
+  --base-plate-shape: 50%;
+}
+
+.class25kg {
+  width: var(--base-plate-diameter);
+  height: var(--base-plate-diameter);
+  border-radius: var(--base-plate-shape);
+  background-color: red;
+  color: whitesmoke;
+}
+
+.class20kg {
+  width: var(--base-plate-diameter);
+  height: var(--base-plate-diameter);
+  border-radius: var(--base-plate-shape);
+  background-color: rgb(55, 100, 150);
+  color: whitesmoke;
+}
+
+.class15kg {
+  width: calc(var(--base-plate-diameter) / 1.125);
+  height: calc(var(--base-plate-diameter) / 1.125);
+  border-radius: var(--base-plate-shape);
+  background-color: rgb(228, 183, 21);
+  color: whitesmoke;
+}
+
+.class10kg {
+  width: calc(var(--base-plate-diameter) / 1.384);
+  height: calc(var(--base-plate-diameter) / 1.384);
+  border-radius: var(--base-plate-shape);
+  background-color: rgb(228, 183, 21);
+  color: whitesmoke;
+}
+
+.class10kg {
+  width: calc(var(--base-plate-diameter) / 1.384);
+  height: calc(var(--base-plate-diameter) / 1.384);
+  border-radius: var(--base-plate-shape);
+  background-color: rgb(0, 167, 35);
+  color: whitesmoke;
+}
+
+.class5kg {
+  width: calc(var(--base-plate-diameter) / 1.973);
+  height: calc(var(--base-plate-diameter) / 1.973);
+  border-radius: var(--base-plate-shape);
+  background-color: whitesmoke;
+  color: black;
+}
+
+.class2point5kg {
+  width: calc(var(--base-plate-diameter) / 2.368);
+  height: calc(var(--base-plate-diameter) / 2.368);
+  border-radius: var(--base-plate-shape);
+  background-color: black;
+  color: whitesmoke;
+}
+
+.class1point25kg {
+  width: calc(var(--base-plate-diameter) / 2.812);
+  height: calc(var(--base-plate-diameter) / 2.812);
+  border-radius: var(--base-plate-shape);
+  background-color: rgb(177, 177, 177);
+  color: black;
+}
+
+.class0point5kg {
+  width: calc(var(--base-plate-diameter) / 3.358);
+  height: calc(var(--base-plate-diameter) / 3.358);
+  border-radius: var(--base-plate-shape);
+  background-color: rgb(177, 177, 177);
+  color: black;
+}
+
+.class0point25kg {
+  width: calc(var(--base-plate-diameter) / 4.017);
+  height: calc(var(--base-plate-diameter) / 4.017);
+  border-radius: var(--base-plate-shape);
+  background-color: rgb(177, 177, 177);
+  color: black;
 }
 
 #submitform {
