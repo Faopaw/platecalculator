@@ -96,6 +96,9 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: rgb(228, 183, 21);
   color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class10kg {
@@ -104,14 +107,9 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: rgb(228, 183, 21);
   color: whitesmoke;
-}
-
-.class10kg {
-  width: calc(var(--base-plate-diameter) / 1.384);
-  height: calc(var(--base-plate-diameter) / 1.384);
-  border-radius: var(--base-plate-shape);
-  background-color: rgb(0, 167, 35);
-  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class5kg {
@@ -120,6 +118,9 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: whitesmoke;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class2point5kg {
@@ -128,6 +129,9 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: black;
   color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class1point25kg {
@@ -136,6 +140,9 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: rgb(177, 177, 177);
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class0point5kg {
@@ -144,6 +151,9 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: rgb(177, 177, 177);
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class0point25kg {
@@ -152,6 +162,9 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: rgb(177, 177, 177);
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #submitform {
