@@ -76,9 +76,23 @@ const renderOutput = function (weightdObject, unit) {
             }
         }
         else {
-            for (let index = 0; index <= item.qty; index++) {
+            for (let index = 0; index < item.qty; index++) {
                 const li = document.createElement("li");
-                li.classList.add(`class${item.singleplate}lb`);
+                if (item.singleplate === 2.5) {
+                    li.classList.add(`class2point5lb`);
+                }
+                else if (item.singleplate === 1) {
+                    li.classList.add(`class1lb`);
+                }
+                else if (item.singleplate === 0.5) {
+                    li.classList.add(`class0point5lb`);
+                }
+                else if (item.singleplate === 0.25) {
+                    li.classList.add(`class0point25lb`);
+                }
+                else {
+                    li.classList.add(`class${item.singleplate}lb`);
+                }
                 li.textContent = `${item.singleplate}lbs`;
                 ul.appendChild(li);
             }

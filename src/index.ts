@@ -78,17 +78,13 @@ const renderOutput = function (
     if (unit === "kgs") {
       for (let index = 0; index < item.qty; index++) {
         const li = document.createElement("li");
-        if(item.singleplate === 2.5){
+        if (item.singleplate === 2.5) {
           li.classList.add(`class2point5kg`);
-        }
-
-        else if(item.singleplate === 1.25){
+        } else if (item.singleplate === 1.25) {
           li.classList.add(`class1point25kg`);
-        }
-        else if(item.singleplate === 0.5){
+        } else if (item.singleplate === 0.5) {
           li.classList.add(`class0point5kg`);
-        }
-        else if(item.singleplate === 0.25){
+        } else if (item.singleplate === 0.25) {
           li.classList.add(`class0point25kg`);
         } else {
           li.classList.add(`class${item.singleplate}kg`);
@@ -97,9 +93,21 @@ const renderOutput = function (
         ul.appendChild(li);
       }
     } else {
-      for (let index = 0; index <= item.qty; index++) {
+      for (let index = 0; index < item.qty; index++) {
         const li = document.createElement("li");
-        li.classList.add(`class${item.singleplate}lb`);
+
+        if (item.singleplate === 2.5) {
+          li.classList.add(`class2point5lb`);
+        } else if (item.singleplate === 1) {
+          li.classList.add(`class1lb`);
+        } else if (item.singleplate === 0.5) {
+          li.classList.add(`class0point5lb`);
+        } else if (item.singleplate === 0.25) {
+          li.classList.add(`class0point25lb`);
+        } else {
+          li.classList.add(`class${item.singleplate}lb`);
+        }
+
         li.textContent = `${item.singleplate}lbs`;
         ul.appendChild(li);
       }
