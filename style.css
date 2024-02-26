@@ -1,16 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
-body {
+
+html {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
-  width: fit;
+  height: 100%;
+  width: 100%;
   margin: none;
   background: #141e30; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #243b55, #141e30);
+  /* background: -webkit-linear-gradient(to bottom, #243b55, #141e30),fixed; */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #243b55, #141e30);
+  /* background: linear-gradient(to bottom, #243b55, #141e30),fixed; */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: aliceblue;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: auto;
+  width: auto;
+  margin: none;
+  /* display: flex;
+  flex-direction: column;
+  overflow-y: scroll; */
 }
 
 .inputsection {
@@ -41,6 +51,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  overflow: visible;
 }
 
 .outputcontainer {
@@ -51,11 +62,14 @@ body {
   text-align: center;
   background: rgb(13, 12, 43);
   margin-top: 1.2rem;
+  margin-bottom: 2rem;
   padding: 0.6rem;
   border-radius: 9%;
   min-width: 200px;
+  max-width: 1000px;
   min-height: 150px;
   border: 1px solid rgba(22, 0, 63, 0.527);
+  /* overflow-y: hidden; */
 }
 
 #weightsul {
@@ -66,6 +80,7 @@ body {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /* Each Class like this is supposed to represent a weight plate form the front view */
@@ -80,6 +95,11 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: red;
   color: whitesmoke;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .class20kg {
@@ -88,6 +108,10 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: rgb(55, 100, 150);
   color: whitesmoke;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class15kg {
@@ -96,6 +120,10 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: rgb(228, 183, 21);
   color: whitesmoke;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class10kg {
@@ -104,6 +132,10 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: rgb(228, 183, 21);
   color: whitesmoke;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class10kg {
@@ -112,6 +144,10 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: rgb(0, 167, 35);
   color: whitesmoke;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class5kg {
@@ -120,6 +156,10 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: whitesmoke;
   color: black;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class2point5kg {
@@ -128,6 +168,10 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: black;
   color: whitesmoke;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class1point25kg {
@@ -136,6 +180,10 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: rgb(177, 177, 177);
   color: black;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class0point5kg {
@@ -144,6 +192,10 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: rgb(177, 177, 177);
   color: black;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class0point25kg {
@@ -152,6 +204,10 @@ body {
   border-radius: var(--base-plate-shape);
   background-color: rgb(177, 177, 177);
   color: black;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #submitform {
